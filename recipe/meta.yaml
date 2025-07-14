@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-haystack" %}
-{% set version = "0.40.14" %}
+{% set version = "0.41.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_haystack-{{ version }}.tar.gz
-  sha256: e49be73ccb2302ebace9a28014ab20dbcaec6d00893358de54b9054202596f9b
+  sha256: 4e5d4df34a2486dee587134b4a74710b40d1bbe8cb1d89d011927e4f78bc69de
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - opentelemetry-api >=1.28.0,<2.0.0
     - opentelemetry-instrumentation >=0.50b0
     - opentelemetry-semantic-conventions >=0.50b0
-    - opentelemetry-semantic-conventions-ai 0.4.9
+    - opentelemetry-semantic-conventions-ai 0.4.10
 
 test:
   imports:
