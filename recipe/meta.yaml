@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-haystack" %}
-{% set version = "0.53.2" %}
+{% set version = "0.53.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_haystack-{{ version }}.tar.gz
-  sha256: eea15026214ae326c41da54cf2a65f7a81629325587e624407f77e1423064fb7
+  sha256: 3981a4b16f452e24fdfe7469def2cb0326da466371e6665723ea596cd6c035de
 
 build:
   noarch: python
