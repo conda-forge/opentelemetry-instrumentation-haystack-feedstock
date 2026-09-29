@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: opentelemetry-instrumentation-haystack
-  version: "0.62.3"
+  version: "0.62.4"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/opentelemetry_instrumentation_haystack-${{ version }}.tar.gz
-  sha256: 0869f3f8e63966aa1dbd610b51b36147b6ba59b421100bcca6108fe73ac3fdc7
+  sha256: 2c2c18db519380f5385cb31857ae5581d6703d185882d80e956e083a4aeefa6f
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
